@@ -1,0 +1,82 @@
+  \documentclass[final,letterpaper,oneside,authoryear,11pt,singlespace,spanish]{ezthesis}
+\input{Macros.tex}
+
+\newcommand{\qed}{\nobreak \ifvmode \relax \else
+      \ifdim\lastskip<1.5em \hskip-\lastskip
+      \hskip1.5em plus0em minus0.5em \fi \nobreak
+      \vrule height0.75em width0.5em depth0.25em\fi}
+
+\author{XXXX XXXX XXXXX}
+\title{XXXXX}
+\degree{Ingeniería Civil Informática}
+\supervisor{XXXX XXXXX XXXXX }
+\institution{Universidad del Bío-Bío, Chile}
+\faculty{Facultad de Ciencias Empresariales}
+\department{Departamento de Sistemas de Información}
+
+
+\begin{document}
+\hyphenation{com-pu-ta-dor}
+\cleardoublepage
+\pagenumbering{roman}
+\setcounter{page}{1}
+%% En esta secci'on se describe la estructura del documento de la tesis.
+%% Consulta los reglamentos de tu universidad para determinar el orden
+%% y la cantidad de secciones que debes de incluir
+
+%% # Portada de la tesis #
+%% Mirar el archivo "titlepage.tex" para los detalles.
+
+\include{titlepage}
+
+%% # Prefacios #
+%% Por cada prefacio (p.e. agradecimientos, resumen, etc.) crear
+%% un nuevo archivo e incluirlo aqu'i
+%% Para m'as detalles y un ejemplo mirar el archivo "gracias.tex".
+
+%\include{resumen}
+\input{capitulos/resumen}
+\input{capitulos/dedicatoria}
+\input{capitulos/acronimos.tex}
+
+\tableofcontents
+%\listoffigures
+\renewcommand{\listfigurename}{Índice de Figuras}
+\listoffigures
+\renewcommand{\listtablename}{Índice de Tablas}
+\listoftables
+
+\cleardoublepage
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+\acrodef{VB}{Visula Basic}
+\acrodef{FP}{Formación Profesional}
+\acrodef{SIDA}{Síndrome de Inmunodeficiencia Adquirida}
+
+\chapter{Introducción}  \label{cap:introduccion}
+\input{capitulos/1introduccion}
+
+\chapter{Marco Teórico} \label{cap:marco_teorico}
+\input{capitulos/2marco}
+
+\chapter{Estado del Arte} \input{capitulos/3estado}
+\label{cap:estado_del_arte}
+
+\chapter{Desarrollo del Trabajo} \label{cap:metodologia}
+\input{capitulos/4metodologia}
+
+\chapter{Resultados}  \label{cap:aplicacion}
+\input{capitulos/5resultados}
+
+\chapter{Conclusiones} \label{cap:conclusion}
+\input{capitulos/6conclusiones}
+
+\bibliographystyle{Thesis}
+% \bibliography{bibfile}
+\bibliography{bibliografia}
+
+%\appendix
+
+
+\end{document}

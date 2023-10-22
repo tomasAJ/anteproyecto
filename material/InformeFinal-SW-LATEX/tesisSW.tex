@@ -1,0 +1,138 @@
+  \documentclass[final,letterpaper,oneside,authoryear,11pt,singlespace,spanish]{ezthesis}
+\input{Macros.tex}
+
+\newcommand{\qed}{\nobreak \ifvmode \relax \else
+      \ifdim\lastskip<1.5em \hskip-\lastskip
+      \hskip1.5em plus0em minus0.5em \fi \nobreak
+      \vrule height0.75em width0.5em depth0.25em\fi}
+
+\author{XXXX XXXX XXXXX}
+\title{XXXXX}
+\degree{Ingeniería Civil Informática}
+\supervisor{XXXX XXXXX XXXXX }
+\institution{Universidad del Bío-Bío, Chile}
+\faculty{Facultad de Ciencias Empresariales}
+\department{Departamento de Sistemas de Información}
+
+
+\begin{document}
+\hyphenation{com-pu-ta-dor}
+\cleardoublepage
+\pagenumbering{roman}
+\setcounter{page}{1}
+%% En esta secci'on se describe la estructura del documento de la tesis.
+%% Consulta los reglamentos de tu universidad para determinar el orden
+%% y la cantidad de secciones que debes de incluir
+
+%% # Portada de la tesis #
+%% Mirar el archivo "titlepage.tex" para los detalles.
+
+\include{titlepage}
+
+%% # Prefacios #
+%% Por cada prefacio (p.e. agradecimientos, resumen, etc.) crear
+%% un nuevo archivo e incluirlo aqu'i
+%% Para m'as detalles y un ejemplo mirar el archivo "gracias.tex".
+
+%\include{resumen}
+\input{capitulos/resumen}
+\input{capitulos/dedicatoria}
+\input{capitulos/acronimos.tex}
+
+
+%\renewcommand{\tableofcontents}{Índice General}
+%\tableofcontents
+\renewcommand\contentsname{Índice General}
+\tableofcontents
+
+
+%\listoffigures
+\renewcommand{\listfigurename}{Índice de Figuras}
+\listoffigures
+
+
+\renewcommand{\listtablename}{Índice de Tablas}
+\listoftables
+
+\cleardoublepage
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+\chapter{Introducción}
+\label{cap:introduccion}
+\input{capitulos/1introduccion}
+
+\chapter{Análisis} 
+\label{cap:analisis}
+\input{capitulos/2analisis}
+
+\chapter{Diseño} 
+\label{cap:disenno}
+\input{capitulos/3disenno}
+
+\chapter{Desarrollo del Trabajo} 
+\label{cap:desarrollo}
+\input{capitulos/4procesodesarrollo}
+
+\chapter{Plan de Capacitaciones} 
+\label{cap:capacitacion}
+\input{capitulos/6capacitaciones}
+
+\chapter{Conclusiones} 
+\label{cap:conclusion}
+\input{capitulos/7conclusiones}
+
+\bibliographystyle{Thesis}
+% \bibliography{bibfile}
+\bibliography{bibliografia}
+
+\appendix
+
+\chapter{Definiciones y abreviaciones del Negocio}
+\label{anexo:glosario}
+\input{anexos/01-glosario.tex}
+
+\chapter{Pruebas de Aceptación}
+\label{anexo:pruebasaceptacion}
+\input{anexos/02-pruebasaceptacion.tex}
+
+\chapter{Recopilación de Información}  
+\label{anexo:recopilacion}
+\input{anexos/03-recopilacioninformacion.tex}
+
+\chapter{Diccionario de datos}
+\label{anexo:diccionario}
+\input{anexos/04-diccionario.tex}
+
+\chapter{Aspectos de gestión de proyectos}
+\label{anexo:gestion}
+\input{anexos/05-gestionproyecto.tex}
+
+        %\section{Carta Gantt con línea base y desviaciones}
+        %\label{anexo:gantt}
+        %\input{anexos/cartagannt.tex}
+
+        %\section{Riesgos de Alto nivel (Amenazas), Impacto, estrategia}
+        %\label{anexo:riesgos}
+        %\input{anexos/riesgos-impacto-estrategia.tex}
+
+        %\section{Estimación CU}
+        %\label{anexo:estimacion} 
+        %\input{anexos/estimacionCU.tex}
+
+        %\section{Resumen Esfuerzo}
+        %\label{anexo:resumenesfuerzo}
+        %\input{anexos/resumenespuerzo.tex}
+
+\section{Retrospectiva Proyecto}
+\label{anexo:retrospectiva} 
+\input{anexos/06-retrospectivaproyecto.tex}
+
+\section{Iteraciones en el desarrollo}
+\label{anexo:iteraciones}
+\input{anexos/07-iteracionesdesarrollo.tex}
+
+
+
+
+\end{document}

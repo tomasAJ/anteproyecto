@@ -1,0 +1,94 @@
+\section{Carta Gantt con línea base y desviaciones}
+Incluir cada Gantt con la explicación del cambio y el efecto en la planificación global
+\section{Riesgos de Alto nivel (Amenazas), Impacto, estrategia}
+Explique los Riesgos que tengan impacto en su proyecto. Ordene los riesgos y defina las acciones (estrategia)que se proponen para abordarles.
+Incluir columna con los riesgos que se presentaron en el proyecto.
+        
+\section{Estimación CU}
+Estimación de tamaño de Sw: Puntos de Casos de Uso
+    • Clasificar Actores
+    • Clasificar casos de uso
+    • Factores técnicos
+    • Factores del entorno
+    • Calcular puntos de Casos de uso
+
+
+Tipo de caso de uso 
+5   Simple      Menos de 5 clases 5    3 transacciones o menos
+10  Medio       5 a 10 clases 10       4 a 7 transacciones
+15  Complejo    Más de 10 clases 18    Más de 7 transacciones
+
+Tipo de actor D
+
+1   Simple  Otro sistema que interactúa con el sistema a desarrollar mediante una interfaz de programación (API).
+2   Medio   Otro sistema interactuando a través de un protocolo (ej. TCP/IP) o una persona interactuando a través de una interfaz en modo texto
+3   Complejo    Una persona que interactúa con el sistema mediante una interfaz gráfica (GUI).
+
+\begin{itemize}
+    \item Calcular UUCP (Unadjusted Use Case Point)
+    \item UUCP= UAW+UUCW 
+    \item Calcular  TCF (Technical Complexity Factor)
+    \item TCF=0.6+(0.01*TFactor)
+    \item Calcular  EF (Environmental Factor)
+    \item EF=1.4+(-0.03*EFactor)
+    \item UCP = UUCP * TCF * EF
+\end{itemize}
+
+Evaluación de relevancia de factores técnicos y ambientales     Valor
+Irrelevante De                                                  0 a 2. 
+Medio De                                                        3 a 4. 
+Esencial                                                        5
+
+
+Calculate TCF (Technical Complexity Factor)
+
+Technical Factor    Multiplier      Relevancia percibida    Resultado multiplicación
+Distributed System  2
+Application performance objectives, in either response or throughput    1
+End-user efficiency (on-line)   1
+Complex internal processing     1
+Reusability, the code must be able to reuse in other applications   1
+Installation ease   0,5
+Operational ease, usability     0,5
+Portability     2
+Changeability   1
+Concurrency     1
+Special security features   1
+Provide direct access for third parties 1
+Special user training facilities    1
+
+
+
+Environmental Factor        Multiplier      Relevancia percibida    Resultado multiplicación
+Familiar with Objectory + RUP   1,5         
+Application experience          0,5
+Object Oriented experience      1
+Analyst capability              0,5
+Motivation                      1
+Stable requirements             2
+Par time workers                -1
+Difficult programming language  -1
+
+
+Level of Effort. Schneider and Winters, proponen que: Si la suma entre (el número de factores de entorno (F1 a F6) inferiores a 3 y el número de factores de entorno (F7 a F8) superiores a 3). 
+\begin{itemize}
+    \item  es menor o igual a 2 entonces LOE=20, 
+    \item  es 3 o 4 LOE=28. 
+    \item  es mayor a 4 reconsiderar el proyecto. Por ejemplo, reducir los riesgos relacionados con los factores de entorno.
+\end{itemize}
+
+
+\section{Resumen Esfuerzo}
+
+El final de este documento se debe indicar las horas destinadas en realizar cada una de las fases del desarrollo del software, las horas corresponden a la suma de las horas gastadas por cada integrante y del equipo en conjunto.
+
+Tabla
+
+Actividades/fases/casos de Uso          N° Horas
+Cuantas horas se dedicaron en)          
+Cuantas horas se dedicaron en           
+Cuantas horas se dedicaron en           
+Cuantas horas se dedicaron en programar 
+Cuantas horas se dedicaron en informe completo (preparar y corregir)    
+Cuantas horas se dedicaron a git        
+TOTAL                           
